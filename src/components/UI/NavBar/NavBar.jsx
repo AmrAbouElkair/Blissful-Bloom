@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./_navBar.scss";
@@ -43,7 +43,7 @@ const Accounts = () => (
 // );
 
 const NavBar = () => {
-  // const navImg = useSelector((state) => state.allImages.navBarImg.navImg);
+  const navImg = useSelector((state) => state.allImages.navBarImg.navImg);
   // const products = useSelector((state) => state.cart.products);
 
   return (
@@ -51,7 +51,7 @@ const NavBar = () => {
       <nav className="navbar main-navbar navbar-expand-lg bg-body-tertiary w-100">
         <div className="container-fluid w-100">
           <Link className="navbar-brand w-25" to="/">
-            Alphastore
+            Blissful Bloom
           </Link>
           <button
             className="navbar-toggler"
@@ -128,7 +128,7 @@ const NavBar = () => {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      {/* <img src={navImg} alt="nav-img" /> */}
+                      <img src={navImg} alt="nav-img" />
                       <i className="fa-lg fa-solid fa-chevron-down"></i>
                     </li>
                     <li>
