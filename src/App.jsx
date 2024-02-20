@@ -1,3 +1,6 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Routes/Routes";
+
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -7,11 +10,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
-  return (
-    <>
-      <h1>Hello</h1>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
