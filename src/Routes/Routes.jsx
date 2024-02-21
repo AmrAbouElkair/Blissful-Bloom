@@ -10,8 +10,8 @@ const Login = lazy(() => import("../views/Login/Login"));
 const Register = lazy(() => import("../views/Register/Register"));
 const MainCart = lazy(() => import("../views/MainCart/MainCart"));
 const Checkout = lazy(() => import("../views/Checkout/Checkout"));
-const NewProduct = lazy(() => import("../views/NewProduct"));
-const NotFound = lazy(() => import("../views/NotFound"));
+const NewProduct = lazy(() => import("../views/NewProduct/NewProduct"));
+const NotFound = lazy(() => import("../views/NotFound/NotFound"));
 
 export const router = createBrowserRouter([
   {
@@ -79,14 +79,14 @@ export const router = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "new-product",
-        element: (
-          <Suspense>
-            <NewProduct fallback={<Loading />} />
-          </Suspense>
-        ),
-      },
+      // {
+      //   path: "new-product",
+      //   element: (
+      //     <Suspense>
+      //       <NewProduct fallback={<Loading />} />
+      //     </Suspense>
+      //   ),
+      // },
       {
         path: "cart",
         element: (

@@ -142,12 +142,12 @@ const NavBar = () => {
               <li className="nav-item icons">
                 <i className="fa-lg fa-regular fa-heart"></i>
                 <i className="fa-lg fa-solid fa-magnifying-glass"></i>
-                <Link to="new-product">
+                {/* <Link to="new-product">
                   <i
                     className="fa-solid fa-plus fa-lg"
                     style={{ color: "" }}
                   ></i>
-                </Link>
+                </Link> */}
                 <button
                   className="person"
                   type="button"
