@@ -4,10 +4,10 @@ import Root from "../views/partials/Root";
 import Home from "../views/Home/Home";
 import Loading from "../components/UI/Loading/Loading";
 
-const Product = lazy(() => import("../views/Product"));
+const Product = lazy(() => import("../views/Product/Product"));
 const Products = lazy(() => import("../views/Products/Products"));
-const Login = lazy(() => import("../views/Login"));
-const Register = lazy(() => import("../views/Register"));
+const Login = lazy(() => import("../views/Login/Login"));
+const Register = lazy(() => import("../views/Register/Register"));
 const MainCart = lazy(() => import("../views/MainCart"));
 const Checkout = lazy(() => import("../views/Checkout"));
 const NewProduct = lazy(() => import("../views/NewProduct"));
