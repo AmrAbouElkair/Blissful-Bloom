@@ -13,6 +13,7 @@ import { combineReducers } from "@reduxjs/toolkit";
 
 // import reducers
 import allImagesReducer from "./slices/images/allImgesSlice";
+import productsReducer from "./slices/products/productsSlice";
 
 const persistConfig = {
   key: "root",
@@ -22,6 +23,7 @@ const persistConfig = {
 
 const reducer = combineReducers({
   allImages: allImagesReducer,
+  products: productsReducer,
 });
 
 const persistdReducer = persistReducer(persistConfig, reducer);
