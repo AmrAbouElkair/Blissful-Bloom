@@ -15,9 +15,16 @@ const NotFound = lazy(() => import("../views/NotFound"));
 
 export const router = createBrowserRouter([
   {
+    path: "*",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <NotFound />
+      </Suspense>
+    ),
+  },
+  {
     path: "/",
     element: <Root />,
-    errorElement: <NotFound />,
     children: [
       {
         index: true,

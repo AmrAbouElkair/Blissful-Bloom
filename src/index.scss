@@ -25,6 +25,15 @@ p {
   margin: 0;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &.focus {
+    border: none;
+  }
+}
+
 .divider:after,
 .divider:before {
   content: "";

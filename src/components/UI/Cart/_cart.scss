@@ -1,7 +1,8 @@
 div.cart-offcanvas {
   height: fit-content;
   top: 80px !important;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #f2f2f2;
 
   div.offcanvas-header {
