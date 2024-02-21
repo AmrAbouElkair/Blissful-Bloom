@@ -1,6 +1,5 @@
-# React + Vite
-
-  <div align="center">
+ <h1 align="center">Blissful Bloom <img src="https://github.com/AmrAbouElkair/Blissful-Bloom/assets/83710148/bc84e69a-8976-4413-80e7-e9e1e186099e" width="25" alt="Logo" /> </h1>
+ <div align="center">
   <img src="https://github.com/AmrAbouElkair/Car-Hub/assets/83710148/019d042e-c12a-418f-b0f8-070d90dc5517" alt="mainImg"/>
   <div>
     <img src="https://img.shields.io/badge/-Javascript-black?style=for-the-badge&logo=javascript&logoColor=white&color=%23F7DF1E" alt="javascript" />
@@ -28,7 +27,7 @@ Blissful Bloom is An E-Commerce Website crafted using a robust stack of logic te
 
 Blissful Bloom is styled with **SASS** for advanced CSS functionalities, **BootStrap** for responsive design, and **Font Awesome** for eye-catching icons. These technologies together create a visually appealing and user-friendly shopping environment.
 
-**Here is a live preview for the project _[Blissful Bloom](https://blissful-bloom.vercel.app/)_!**
+**Here is a live preview for the project _[Blissful Bloom](https://blissful-bloom.pages.dev/)_!**
 
 ## <a name="introduction"> ![idea](https://github.com/AmrAbouElkair/LensCrafters/assets/83710148/c8e0ad20-4a63-4fa0-8c4f-6c8368ed0adf) Introduction</a>
 
