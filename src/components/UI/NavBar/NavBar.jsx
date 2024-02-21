@@ -77,7 +77,7 @@ const NavBar = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-3 text-uppercase fw-bold text-dark">
               <li className="nav-item">
-                <Link className="nav-link" to="/products">
+                <Link className="nav-link" to="products">
                   Store
                 </Link>
               </li>
@@ -110,17 +110,17 @@ const NavBar = () => {
                   </button>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="/products/women">
+                      <Link className="dropdown-item" to="products/women">
                         Women
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/products/men">
+                      <Link className="dropdown-item" to="products/men">
                         Men
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/products">
+                      <Link className="dropdown-item" to="products">
                         Children
                       </Link>
                     </li>
@@ -142,7 +142,7 @@ const NavBar = () => {
               <li className="nav-item icons">
                 <i className="fa-lg fa-regular fa-heart"></i>
                 <i className="fa-lg fa-solid fa-magnifying-glass"></i>
-                {/* <Link to="/new-product">
+                {/* <Link to="new-product">
                   <i
                     className="fa-solid fa-plus fa-lg"
                     style={{ color: "" }}

@@ -13,8 +13,8 @@ const Footer = () => {
       <div className="row top">
         <div className={colClasses}>
           <h1>Catagories</h1>
-          <Link to="/products">Women</Link>
-          <Link to="/products">Men</Link>
+          <Link to="products">Women</Link>
+          <Link to="products">Men</Link>
           <Link to="">Shoes</Link>
           <Link to="">Accessories</Link>
           <Link to="">New Arrivals</Link>

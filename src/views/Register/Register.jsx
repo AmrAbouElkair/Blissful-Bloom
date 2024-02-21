@@ -117,7 +117,7 @@ const Register = () => {
                 </button>
                 <p className="small fw-bold mt-2 pt-1 mb-0">
                   Already have an account?
-                  <Link to="/login" className="link-danger mx-1">
+                  <Link to="login" className="link-danger mx-1">
                     LogIn
                   </Link>
                 </p>

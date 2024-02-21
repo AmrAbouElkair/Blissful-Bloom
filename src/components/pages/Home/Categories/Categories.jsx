@@ -32,7 +32,7 @@ const Categories = () => {
                 className="card-img-top h-100 w-100 position-absolute"
                 alt="new-season"
               />
-              <Link to={`/products/${men}`} className="position-absolute">
+              <Link to={`products/${men}`} className="position-absolute">
                 men
               </Link>
             </div>
@@ -42,7 +42,7 @@ const Categories = () => {
                 className="card-img-top h-100 w-100 position-absolute"
                 alt="women-img"
               />
-              <Link to={`/products/${women}`} className="position-absolute">
+              <Link to={`products/${women}`} className="position-absolute">
                 women
               </Link>
             </div>
@@ -53,7 +53,7 @@ const Categories = () => {
               className="card-img-top h-100 w-100 position-absolute"
               alt="sale-img"
             />
-            <Link to="/products" className="position-absolute">
+            <Link to="products" className="position-absolute">
               sale
             </Link>
           </div>
@@ -65,7 +65,7 @@ const Categories = () => {
                   className="card-img-top h-100 w-100 position-absolute"
                   alt="men-img"
                 />
-                <Link to="/products" className="position-absolute">
+                <Link to="products" className="position-absolute">
                   new season
                 </Link>
               </div>
@@ -75,7 +75,7 @@ const Categories = () => {
                   className="card-img-top h-100 w-100 position-absolute"
                   alt="accessories-img"
                 />
-                <Link to="/products" className="position-absolute">
+                <Link to="products" className="position-absolute">
                   accessories
                 </Link>
               </div>
@@ -87,7 +87,7 @@ const Categories = () => {
                   className="card-img-top h-100 w-100 position-absolute"
                   alt="shoes-img"
                 />
-                <Link to="/products" className="position-absolute">
+                <Link to="products" className="position-absolute">
                   shoes
                 </Link>
               </div>
