@@ -9,7 +9,7 @@ const Products = lazy(() => import("../views/Products/Products"));
 const Login = lazy(() => import("../views/Login/Login"));
 const Register = lazy(() => import("../views/Register/Register"));
 const MainCart = lazy(() => import("../views/MainCart/MainCart"));
-const Checkout = lazy(() => import("../views/Checkout"));
+const Checkout = lazy(() => import("../views/Checkout/Checkout"));
 const NewProduct = lazy(() => import("../views/NewProduct"));
 const NotFound = lazy(() => import("../views/NotFound"));
 
