@@ -1,13 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { MDBIcon } from "mdb-react-ui-kit";
+
+import "./_cart.scss";
+
 import {
   removeFromCart,
   resetCart,
-} from "../../../store/slices/cart/cartSlice";
+} from "../../../store/slices/cart/cartSllice";
 import toast, { Toaster } from "react-hot-toast";
-
-import "./_cart.scss";
-import { Link } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./_navBar.scss";
-// import Cart from "../Cart/Cart";
+import Cart from "../Cart/Cart";
 
 const Accounts = () => (
   <div
@@ -28,23 +28,23 @@ const Accounts = () => (
   </div>
 );
 
-// const CartIcon = ({ products }) => (
-//   <div className="cartIcon">
-//     <button
-//       type="button"
-//       data-bs-toggle="offcanvas"
-//       data-bs-target="#offcanvasRight"
-//       aria-controls="offcanvasRight"
-//     >
-//       <i className="fa-lg fa-solid fa-cart-shopping"></i>
-//     </button>
-//     <span>{products.length}</span>
-//   </div>
-// );
+const CartIcon = ({ products }) => (
+  <div className="cartIcon">
+    <button
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <i className="fa-lg fa-solid fa-cart-shopping"></i>
+    </button>
+    <span>{products.length}</span>
+  </div>
+);
 
 const NavBar = () => {
   const navImg = useSelector((state) => state.allImages.navBarImg.navImg);
-  // const products = useSelector((state) => state.cart.products);
+  const products = useSelector((state) => state.cart.products);
 
   return (
     <Fragment>
@@ -67,7 +67,7 @@ const NavBar = () => {
 
           <ul className="navbar-nav collapse-icon w-25">
             <li className="nav-item collapse-cartIcon">
-              {/* <CartIcon products={products} /> */}
+              <CartIcon products={products} />
             </li>
           </ul>
 
@@ -157,13 +157,13 @@ const NavBar = () => {
                 >
                   <i className="fa-lg fa-regular fa-user"></i>
                 </button>
-                {/* <CartIcon products={products} /> */}
+                <CartIcon products={products} />
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      {/* <Cart /> */}
+      <Cart />
       <Accounts />
     </Fragment>
   );

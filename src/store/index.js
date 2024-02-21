@@ -14,6 +14,7 @@ import { combineReducers } from "@reduxjs/toolkit";
 // import reducers
 import allImagesReducer from "./slices/images/allImgesSlice";
 import productsReducer from "./slices/products/productsSlice";
+import cartReducer from "./slices/cart/cartSllice";
 
 const persistConfig = {
   key: "root",
@@ -24,6 +25,7 @@ const persistConfig = {
 const reducer = combineReducers({
   allImages: allImagesReducer,
   products: productsReducer,
+  cart: cartReducer,
 });
 
 const persistdReducer = persistReducer(persistConfig, reducer);

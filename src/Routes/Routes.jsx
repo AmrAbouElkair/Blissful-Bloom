@@ -5,7 +5,7 @@ import Home from "../views/Home/Home";
 import Loading from "../components/UI/Loading/Loading";
 
 const Product = lazy(() => import("../views/Product"));
-const Products = lazy(() => import("../views/Products"));
+const Products = lazy(() => import("../views/Products/Products"));
 const Login = lazy(() => import("../views/Login"));
 const Register = lazy(() => import("../views/Register"));
 const MainCart = lazy(() => import("../views/MainCart"));

@@ -1,0 +1,60 @@
+div.product-container {
+  div.row.top {
+    img {
+      object-fit: cover;
+      height: 350px;
+      padding: 0 !important;
+    }
+  }
+
+  div.row.center {
+    nav {
+      h2 {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #0160f8 !important;
+      }
+      ul.navbar-nav.categ-navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        label.form-check-label {
+          text-transform: capitalize;
+        }
+        div.btn-group {
+          button {
+            color: rgb(71, 71, 71);
+            font-weight: 500;
+            font-size: 17px;
+            border: none;
+          }
+          ul {
+            li {
+              margin-left: 10px;
+            }
+          }
+        }
+        :last-child {
+          label {
+            font-size: 17px;
+            font-weight: 500;
+            color: rgb(71, 71, 71);
+          }
+          div.filter-input {
+            span {
+              font-weight: 600;
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.bottom {
+    margin: 30px 0 100px;
+  }
+}
