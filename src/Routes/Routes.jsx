@@ -10,7 +10,7 @@ const Login = lazy(() => import("../views/Login/Login"));
 const Register = lazy(() => import("../views/Register/Register"));
 const MainCart = lazy(() => import("../views/MainCart/MainCart"));
 const Checkout = lazy(() => import("../views/Checkout/Checkout"));
-const NewProduct = lazy(() => import("../views/NewProduct/NewProduct"));
+// const NewProduct = lazy(() => import("../views/NewProduct/NewProduct"));
 const NotFound = lazy(() => import("../views/NotFound/NotFound"));
 
 export const router = createBrowserRouter([

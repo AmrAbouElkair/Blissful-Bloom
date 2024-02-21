@@ -12,7 +12,7 @@ import {
 
 import { db } from "../../../config/firebase";
 
-const List = ({ catId, maxPrice, sort, subCats }) => {
+const List = ({ maxPrice, sort, subCats }) => {
   // const dispatch = useDispatch();
 
   const [filteredProducts, setFilteredProducts] = useState([]);

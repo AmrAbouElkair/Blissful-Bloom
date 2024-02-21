@@ -8,7 +8,7 @@ const Card = ({ product }) => {
       <div
         className={`card featured-card w-100 animate__animated animate__fadeIn`}
       >
-        <Link to={`product/${product?.id}`}>
+        <Link to={`/product/${product?.id}`}>
           <div className="image">
             {product?.product_condition && <span>New Season</span>}
             <img
