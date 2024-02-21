@@ -1,0 +1,65 @@
+.featured-card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      border-radius: 5px 0 0;
+    }
+    img.main-img {
+      z-index: 1;
+    }
+    &:hover {
+      img.second-img {
+        z-index: 2;
+      }
+    }
+    span {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: white;
+      color: teal;
+      padding: 3px 5px;
+      z-index: 5;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: capitalize;
+  }
+  div.prices {
+    display: flex;
+    gap: 20px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+
+      &:first-child {
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+  }
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.059);
+  }
+}

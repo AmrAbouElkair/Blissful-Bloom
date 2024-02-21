@@ -1,0 +1,22 @@
+$justified: center !important;
+$mSpaing: 10px 0;
+
+@media (max-width: 767.98px) {
+  div.home-contact {
+    div.row {
+      height: fit-content !important;
+
+      div.top {
+        justify-content: $justified;
+        margin: $mSpaing;
+      }
+      div.center {
+        margin: $mSpaing;
+      }
+      div.bottom {
+        justify-content: $justified;
+        margin: $mSpaing;
+      }
+    }
+  }
+}

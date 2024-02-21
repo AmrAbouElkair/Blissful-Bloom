@@ -1,0 +1,40 @@
+.featured-top {
+  margin: 3rem 0;
+
+  .item {
+    display: flex;
+    align-items: center;
+    h1 {
+      font-weight: bold;
+      padding-left: 20%;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 12px;
+      color: rgb(93, 92, 92);
+      width: 80%;
+    }
+  }
+}
+
+.featured-bottom {
+  margin: 30px 0 100px;
+}
+
+@media (max-width: 991.98px) {
+  div.fratured-top-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .col {
+      text-align: center;
+      justify-content: center;
+      h1 {
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
