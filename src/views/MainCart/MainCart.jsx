@@ -201,7 +201,7 @@ const MainCart = () => {
                             .toFixed(2)}
                         </MDBTypography>
                       </div>
-                      <Link to="checkout" className="btn btn-dark btn-lg">
+                      <Link to="/checkout" className="btn btn-dark btn-lg">
                         Procced to checkout
                       </Link>
                       <button

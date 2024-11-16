@@ -3,18 +3,32 @@ import { useSelector } from "react-redux";
 
 // Styling
 import "./_footer.scss";
+import { useEffect } from "react";
+import { getCategories } from "../../../store/slices/products/productsFetching";
+import { useDispatch } from "react-redux";
 
 const colClasses = "col-md-2 d-flex flex-column justify-content-around";
 
 const Footer = () => {
   const footerImg = useSelector((state) => state.allImages.footer.footImg);
+  const dispatch = useDispatch();
+
+  const categories = useSelector((state) => state.products.categories);
+
+  useEffect(() => {
+    dispatch(getCategories());
+  }, [dispatch]);
+
+  const women = categories[0]?.id;
+  const men = categories[1]?.id;
+
   return (
     <div className="container-fluid footer">
       <div className="row top">
         <div className={colClasses}>
           <h1>Catagories</h1>
-          <Link to="products">Women</Link>
-          <Link to="products">Men</Link>
+          <Link to={`products/${women}`}>Women</Link>
+          <Link to={`products/${men}`}>Men</Link>
           <Link to="">Shoes</Link>
           <Link to="">Accessories</Link>
           <Link to="">New Arrivals</Link>
